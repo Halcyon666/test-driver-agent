@@ -1,0 +1,26 @@
+[project]
+name = "test-driver-agent"
+version = "0.1.0"
+description = "Full Test Automation MCP Server - TDD test generation, RPA, API testing, mutation analysis"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "openai>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio"]
+
+[project.scripts]
+test-driver-agent = "test_driver_agent.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

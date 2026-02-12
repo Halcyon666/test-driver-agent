@@ -1,9 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+
+# Java leftovers (ignore all)
 target/
+*.class
+*.jar
 .settings/
 .project
-*.class
-.idea/
-*.iml
-.DS_Store
 .classpath
 .factorypath
+.idea/
+*.iml
+pom.xml
+agent-core/
+agent-executors/
+agent-mcp-server/
+srctest_driver_agent/
+
+# OS
+.DS_Store
